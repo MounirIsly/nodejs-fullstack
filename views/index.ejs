@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('layouts/header') -%>
+<body>
+    <h1>Home Page</h1>
+    <%-include('layouts/navbar'); %>
+    
+   
+            <% for (i = 0; i < post.length; i ++) { %>
+        <a href="/post/<%=post[i]._id %>" class="post-link">
+        <div class="posts">
+            <div class="post-detail">
+                <h2> <%=post[i].title %> </h2> 
+                <p> <%=post[i].body %> </p>
+                <p class="date">Posted on <%=post[i].datePosted.toDateString() %> </p>
+            </div>
+                <% } %>
+  </div>
+</a>
+</body>
+</html>

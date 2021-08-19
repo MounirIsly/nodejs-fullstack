@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+}
+
+.main-nav {
+    background-color: blue;
+    padding: 10px;
+    color: burlywood;
+    list-style: none;
+}
+.main-nav a {
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-link {
+    text-decoration: none;
+    color: brown;
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.post-detail {
+    flex-basis: 300px;
+    background-color: burlywood;
+    margin: 10px;
+    padding: 20px;
+    
+}
+.img {
+    height: 300px;
+    width: 400px;
+    background-color: beige;
+}

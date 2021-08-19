@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('layouts/header'); %>
+<body>
+    <%-include('layouts/navbar'); %>
+     <h2>Register a New Account</h2>
+    <form action="users/register" method="post" enctype="multipart/form-data">
+        <label for="name">User Name</label>
+        <input type="text" name="username" placeholder="Username...">
+        <label for="password">Password</label>
+        <input type="password" name="password"> 
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
